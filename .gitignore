@@ -1,3 +1,36 @@
-.env
+# binary output
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-/.env
+# test cache
+*.test
+*.out
+
+# env files
+.env
+.env.local
+.env.*
+
+# vendor (if not committing dependencies)
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# air (live reload tool)
+tmp/
+
+# coverage
+coverage.out
+coverage.html
