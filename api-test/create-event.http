@@ -1,0 +1,58 @@
+POST http://localhost:3001/events
+Content-Type: application/json
+
+{
+    "name": "test-event",
+    "description": "This is a test event from the request",
+    "location": "Nowhere",
+    "dateTime": "2026-04-13T15:30:00.000Z",
+}
+
+#### 
+GET http://localhost:3001/events
+Content-Type: application/json
+
+{
+    "name": "test-event",
+    "description": "This is a test event from the request",
+    "location": "Nowhere",
+    "dateTime": "2026-04-13T15:30:00.000Z"
+}
+
+#### 
+
+GET  http://localhost:3001/events/1
+Content-Type: application/json
+
+{
+    "name": "test-event",
+    "description": "This is a test event from the request",
+    "location": "Nowhere",
+    "dateTime": "2026-04-13T15:30:00.000Z"
+}
+
+
+####
+
+PUT  http://localhost:3001/events/1
+Content-Type: application/json
+
+{
+    "name": "New EVent",
+    "description": "Elden ring sucks",
+    "location": "Everywhere",
+    "dateTime": "2026-04-14T15:30:00.000Z"
+}
+
+####
+
+DELETE   http://localhost:3001/events/1
+Content-Type: application/json
+
+{
+    "name": "New EVent",
+    "description": "Elden ring sucks",
+    "location": "Everywhere",
+    "dateTime": "2026-04-14T15:30:00.000Z"
+}
+
